@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Matthew Montgomery | Freelance Web & Digital Work</title>
+  <meta name="description" content="Freelance web, e-commerce, SEO, and digital support by Matthew Montgomery. Clean, simple, and practical work." />
+
+  <style>
+    :root{
+      --navy:#0b1f3a;
+      --navy-2:#102a52;
+      --ink:#111827;
+      --muted:#4b5563;
+      --line:#e5e7eb;
+      --bg:#ffffff;
+      --soft:#f7f9fc;
+      --radius:16px;
+      --shadow:0 10px 30px rgba(11,31,58,.08);
+      --max:1100px;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--ink);
+      background:#fff;
+      line-height:1.55;
+    }
+
+    a{color:inherit; text-decoration:none}
+    .container{max-width:var(--max); margin:0 auto; padding:0 20px}
+
+    header{
+      position:sticky; top:0; z-index:1000;
+      background:rgba(255,255,255,.95);
+      border-bottom:1px solid var(--line);
+    }
+
+    .topbar{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:14px 0;
+      gap:14px;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+
+    .mark{
+      width:34px;
+      height:34px;
+      border-radius:10px;
+      background:linear-gradient(135deg, var(--navy), #1e3a8a);
+    }
+
+    nav a{
+      margin-left:12px;
+      font-size:14px;
+      color:var(--navy);
+    }
+
+    .btn{
+      display:inline-block;
+      padding:10px 14px;
+      border-radius:12px;
+      border:1px solid var(--navy);
+      background:var(--navy);
+      color:#fff;
+      font-weight:600;
+    }
+
+    .btn.outline{
+      background:#fff;
+      color:var(--navy);
+      border-color:var(--line);
+    }
+
+    section{padding:56px 0}
+    h1,h2,h3{color:var(--navy)}
+    h1{font-size:40px; margin-bottom:10px}
+    h2{font-size:28px}
+    h3{font-size:16px}
+
+    .lead{
+      font-size:18px;
+      color:var(--muted);
+      max-width:60ch;
+    }
+
+    .grid-3{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:16px;
+    }
+
+    .card{
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:18px;
+      background:#fff;
+      box-shadow:0 8px 20px rgba(0,0,0,.03);
+    }
+
+    .work{
+      background:var(--soft);
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
+    }
+
+    .contact-card{
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:20px;
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:20px;
+    }
+
+    footer{
+      padding:20px 0;
+      border-top:1px solid var(--line);
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    @media(max-width:900px){
+      .grid-3{grid-template-columns:1fr}
+      .contact-card{grid-template-columns:1fr}
+      h1{font-size:34px}
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <div class="container topbar">
+    <div class="brand">
+      <div class="mark"></div>
+      <div>
+        <strong>Matthew Montgomery</strong><br>
+        <span style="font-size:12px;color:var(--muted)">Freelance web & digital work</span>
+      </div>
+    </div>
+
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a class="btn outline" href="#contact">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section>
+  <div class="container">
+    <h1>Simple websites that feel clear and honest.</h1>
+    <p class="lead">
+      I help people build and fix websites, stores, and online tools.
+      My focus is clean design, plain language, and work that makes sense.
+    </p>
+
+    <a class="btn" href="#contact">Email me</a>
+    <a class="btn outline" href="#work">See my work</a>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <h2>Services</h2>
+    <div class="grid-3">
+      <div class="card">
+        <h3>Websites</h3>
+        <p>New sites or clean rebuilds that load fast and are easy to read.</p>
+      </div>
+      <div class="card">
+        <h3>E-commerce help</h3>
+        <p>Product pages, checkout fixes, and store cleanup.</p>
+      </div>
+      <div class="card">
+        <h3>SEO basics</h3>
+        <p>Clear titles, structure, and fixes that help search engines understand your site.</p>
+      </div>
+      <div class="card">
+        <h3>Content updates</h3>
+        <p>Simple edits and new pages so you don’t have to fight your site.</p>
+      </div>
+      <div class="card">
+        <h3>Landing pages</h3>
+        <p>One focused page built to explain one thing well.</p>
+      </div>
+      <div class="card">
+        <h3>Ongoing support</h3>
+        <p>Monthly help to keep things working and up to date.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work" class="work">
+  <div class="container">
+    <h2>Work</h2>
+    <p class="lead">Replace these with real examples as you go.</p>
+    <div class="grid-3">
+      <div class="card">
+        <h3>Website rebuild</h3>
+        <p>Cleaner layout, better load time, easier navigation.</p>
+      </div>
+      <div class="card">
+        <h3>Store cleanup</h3>
+        <p>Improved product pages and smoother checkout.</p>
+      </div>
+      <div class="card">
+        <h3>Landing page</h3>
+        <p>One clear message with strong structure.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <h2>About me</h2>
+    <p class="lead">
+      I’ve worked with websites and online stores for over 15 years.
+      I ran my own e-commerce business before moving into freelance work.
+    </p>
+
+    <div class="grid-3">
+      <div class="card">
+        <h3>Clear process</h3>
+        <p>You’ll always know what I’m doing and why.</p>
+      </div>
+      <div class="card">
+        <h3>Plain language</h3>
+        <p>No tech talk unless you want it.</p>
+      </div>
+      <div class="card">
+        <h3>Practical results</h3>
+        <p>Work that solves problems, not fluff.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2>Contact</h2>
+
+    <div class="contact-card">
+      <div>
+        <p>
+          Send a short message with what you want to build or fix.
+          If you have a deadline, include that too.
+        </p>
+        <a class="btn" href="mailto:matt@onetakemedia.net?subject=Project%20request%20from%20onetakemedia.net">
+          Email me
+        </a>
+      </div>
+
+      <div>
+        <p><strong>Email</strong><br>matt@onetakemedia.net</p>
+        <p><strong>Location</strong><br>Remote / Michigan</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    © <span id="year"></span> onetakemedia.net
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
