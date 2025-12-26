@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Page not found | onetakemedia.net</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+
+  <style>
+    :root{
+      --navy:#0b1f3a;
+      --ink:#111827;
+      --muted:#4b5563;
+      --line:#e5e7eb;
+      --soft:#f7f9fc;
+      --radius:16px;
+    }
+
+    *{box-sizing:border-box}
+
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background:#fff;
+      color:var(--ink);
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      line-height:1.55;
+    }
+
+    .wrap{
+      max-width:620px;
+      padding:32px 22px;
+      text-align:center;
+    }
+
+    .mark{
+      width:54px;
+      height:54px;
+      margin:0 auto 18px;
+      border-radius:16px;
+      background:linear-gradient(135deg, var(--navy), #1e3a8a);
+    }
+
+    h1{
+      margin:0 0 10px;
+      font-size:36px;
+      color:var(--navy);
+    }
+
+    p{
+      margin:0 0 18px;
+      color:var(--muted);
+      font-size:16px;
+    }
+
+    .card{
+      margin:24px 0;
+      padding:20px;
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      background:var(--soft);
+    }
+
+    .actions{
+      display:flex;
+      justify-content:center;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-top:14px;
+    }
+
+    a.btn{
+      display:inline-block;
+      padding:10px 16px;
+      border-radius:12px;
+      border:1px solid var(--navy);
+      background:var(--navy);
+      color:#fff;
+      font-weight:600;
+      text-decoration:none;
+    }
+
+    a.btn.outline{
+      background:#fff;
+      color:var(--navy);
+      border-color:var(--line);
+    }
+
+    footer{
+      margin-top:28px;
+      font-size:13px;
+      color:var(--muted);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="mark" aria-hidden="true"></div>
+
+    <h1>Page not found</h1>
+    <p>
+      The page you’re looking for isn’t here.
+      It may have moved, or the link may be wrong.
+    </p>
+
+    <div class="card">
+      <p>
+        If you were trying to reach something specific,
+        the homepage is the best place to start.
+      </p>
+
+      <div class="actions">
+        <a class="btn" href="/">Go to homepage</a>
+        <a class="btn outline" href="mailto:matt@onetakemedia.net">
+          Email me
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      © <span id="year"></span> onetakemedia.net
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
